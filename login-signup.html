@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-group .error {
+      color: red;
+      font-size: 14px;
+    }
+    
+    .message {
+      margin-top: 10px;
+      text-align: center;
+      color: green;
+    }
+    
+    .message.error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+    <div class="message" id="loginMessage"></div>
+  </div>
+  
+  <div class="container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="registerFirstName">First Name:</label>
+        <input type="text" id="registerFirstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="registerLastName">Last Name:</label>
+        <input type="text" id="registerLastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="registerEmail">Email:</label>
+        <input type="email" id="registerEmail" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="registerPassword">Password:</label>
+        <input type="password" id="registerPassword" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="registerConfirmPassword">Confirm Password:</label>
+        <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+    <div class="message" id="registerMessage"></div>
+  </div>
+  
+  <script>
+    // Example JavaScript code for handling form submissions and displaying messages
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      
+      // Perform login logic here, such as sending an AJAX request to the backend
+      
+      // Example success message
+      document.getElementById('loginMessage').className = 'message';
+      document.getElementById('loginMessage').textContent = 'Login successful!';
+      
+      // Example error message
+      // document.getElementById('loginMessage').className = 'message error';
+      // document.getElementById('loginMessage').textContent = 'Invalid credentials!';
+    });
+    
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const firstName = document.getElementById('registerFirstName').value;
+      const lastName = document.getElementById('registerLastName').value;
+      const email = document.getElementById('registerEmail').value;
+      const password = document.getElementById('registerPassword').value;
+      const confirmPassword = document.getElementById('registerConfirmPassword').value;
+      
+      // Perform registration logic here, such as sending an AJAX request to the backend
+      
+      // Example success message
+      document.getElementById('registerMessage').className = 'message';
+      document.getElementById('registerMessage').textContent = 'Registration successful!';
+      
+      // Example error message
+      // document.getElementById('registerMessage').className = 'message error';
+      // document.getElementById('registerMessage').textContent = 'Registration failed!';
+    });
+  </script>
+</body>
+</html>
