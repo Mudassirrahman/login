@@ -2,7 +2,7 @@
 
 # Login signup form
 
-##Demo: https://login-mudassirrehman1989-gmailcom.vercel.app/
+## Demo: https://login-mudassirrehman1989-gmailcom.vercel.app/
 
 ## Description
 
@@ -27,9 +27,9 @@ This is a frontend project that implements a login and signup functionality usin
 2. Open the project in your preferred code editor.
 3. Open `index.html` in a web browser.
 
-## Screenshots
+//## Screenshots
 
-Include screenshots or GIFs of your application to showcase its appearance and functionality.
+//Include screenshots or GIFs of your application to showcase its appearance and functionality.
 
 ## Contributing
 
@@ -37,4 +37,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## Contact
 
-If you have any questions or want to reach out, feel free to contact me at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or want to reach out, feel free to contact me at mudassirrehman1989@gmail.com.
