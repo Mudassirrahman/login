@@ -2,8 +2,7 @@
 
 # Login signup form
 
-## Demo: login-signup-mu.vercel.app
-
+## Demo: https://mudassirrahman.github.io/login/
 ## Description
 
 This is a frontend project that implements a login and signup functionality using HTML, CSS, and JavaScript. It provides a user-friendly interface for users to register and login to the system.
